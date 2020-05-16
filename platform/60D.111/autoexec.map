@@ -1,0 +1,490 @@
+Archive member included because of file (symbol)
+
+gcc-libgcc.a(_udivsi3.o)      font_direct.o (__aeabi_uidiv)
+gcc-libgcc.a(_dvmd_tls.o)     gcc-libgcc.a(_udivsi3.o) (__aeabi_idiv0)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .text set to 0x40800000
+LOAD reboot.o
+LOAD disp_direct.o
+LOAD font_direct.o
+LOAD strlen.o
+LOAD strcmp.o
+LOAD gcc-libgcc.a
+LOAD footer.o
+                0x00008000                PROVIDE (__executable_start, 0x8000)
+                0x00008000                . = 0x8000
+
+.interp
+ *(.interp)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash
+ *(.hash)
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+
+.rela.text
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+
+.rela.rodata
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+
+.rel.data.rel.ro
+ *(.rel.data.rel.ro .rel.data.rel.ro.* .rel.gnu.linkonce.d.rel.ro.*)
+
+.rela.data.rel.ro
+ *(.rela.data.rel.ro .rela.data.rel.ro.* .rela.gnu.linkonce.d.rel.ro.*)
+
+.rel.data
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+
+.rela.data
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+
+.rel.tdata
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+
+.rela.tdata
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+
+.rel.tbss
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+
+.rela.tbss
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+
+.rela.bss
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+
+.rel.iplt       0x00008000        0x0
+                0x00008000                PROVIDE (__rel_iplt_start, .)
+ *(.rel.iplt)
+ .rel.iplt      0x00000000        0x0 reboot.o
+                0x00008000                PROVIDE (__rel_iplt_end, .)
+
+.rela.iplt      0x00008000        0x0
+                0x00008000                PROVIDE (__rela_iplt_start, .)
+ *(.rela.iplt)
+                0x00008000                PROVIDE (__rela_iplt_end, .)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.init
+ *(SORT(.init))
+
+.plt
+ *(.plt)
+
+.iplt           0x00008000        0x0
+ *(.iplt)
+ .iplt          0x00000000        0x0 reboot.o
+
+.text           0x40800000    0x71ad4
+ *(.text.unlikely .text.*_unlikely)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ *(.text.hot .text.hot.*)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x40800000    0x71620 reboot.o
+                0x40800000                _start
+                0x4080011c                blob_start
+                0x4087139c                blob_end
+                0x4087139c                cstart
+ .text          0x40871620      0x270 disp_direct.o
+                0x40871704                disp_set_pixel
+                0x4087173c                disp_init
+                0x40871840                print_line
+ .text          0x40871890       0xe0 font_direct.o
+                0x40871890                font_draw
+ .text          0x40871970       0x1c strlen.o
+                0x40871970                strlen
+ .text          0x4087198c       0x30 strcmp.o
+                0x4087198c                strcoll
+                0x4087198c                strcmp
+ .text          0x408719bc      0x114 gcc-libgcc.a(_udivsi3.o)
+                0x408719bc                __udivsi3
+                0x408719bc                __aeabi_uidiv
+                0x40871ab0                __aeabi_uidivmod
+ .text          0x40871ad0        0x4 gcc-libgcc.a(_dvmd_tls.o)
+                0x40871ad0                __aeabi_ldiv0
+                0x40871ad0                __aeabi_idiv0
+ .text          0x40871ad4        0x0 footer.o
+ *(.gnu.warning)
+ *(.glue_7t)
+ .glue_7t       0x00000000        0x0 linker stubs
+ *(.glue_7)
+ .glue_7        0x00000000        0x0 linker stubs
+ *(.vfp11_veneer)
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+ *(.v4_bx)
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.fini
+ *(SORT(.fini))
+                0x40871ad4                PROVIDE (__etext, .)
+                0x40871ad4                PROVIDE (_etext, .)
+                0x40871ad4                PROVIDE (etext, .)
+
+.rodata         0x40871ad4      0x565
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.str1.1
+                0x40871ad4      0x17d reboot.o
+                                0x17e (size before relaxing)
+ *fill*         0x40871c51        0x3 
+ .rodata        0x40871c54       0x40 disp_direct.o
+ .rodata.str1.1
+                0x40871c94       0x45 disp_direct.o
+ .rodata        0x40871cd9      0x360 font_direct.o
+
+.rodata1
+ *(.rodata1)
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                0x40872039                PROVIDE (__exidx_start, .)
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x40872039                PROVIDE (__exidx_end, .)
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+
+.eh_frame
+ *(.eh_frame)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+                0x40872039                . = .
+
+.eh_frame
+ *(.eh_frame)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+
+.tdata
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array  0x40872039        0x0
+                0x40872039                PROVIDE (__preinit_array_start, .)
+ *(.preinit_array)
+                0x40872039                PROVIDE (__preinit_array_end, .)
+
+.init_array     0x40872039        0x0
+                0x40872039                PROVIDE (__init_array_start, .)
+ *(SORT(.init_array.*))
+ *(.init_array)
+                0x40872039                PROVIDE (__init_array_end, .)
+
+.fini_array     0x40872039        0x0
+                0x40872039                PROVIDE (__fini_array_start, .)
+ *(SORT(.fini_array.*))
+ *(.fini_array)
+                0x40872039                PROVIDE (__fini_array_end, .)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+
+.dynamic
+ *(.dynamic)
+
+.got            0x4087203c        0x0
+ *(.got.plt)
+ *(.igot.plt)
+ .igot.plt      0x00000000        0x0 reboot.o
+ *(.got)
+ *(.igot)
+
+.data           0x40872040       0x40
+                0x40872040                __data_start = .
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x40872040        0x0 reboot.o
+ .data          0x40872040        0x8 disp_direct.o
+ .data          0x40872048        0x0 font_direct.o
+ .data          0x40872048        0x0 strlen.o
+ .data          0x40872048        0x0 strcmp.o
+ .data          0x40872048        0x0 gcc-libgcc.a(_udivsi3.o)
+ .data          0x40872048        0x0 gcc-libgcc.a(_dvmd_tls.o)
+ *fill*         0x40872048       0x18 
+ .data          0x40872060       0x20 footer.o
+                0x40872078                autoexec_bin_footer
+                0x40872080                autoexec_bin_checksum_end
+
+.data1
+ *(.data1)
+                0x40872080                _edata = .
+                0x40872080                PROVIDE (edata, .)
+                0x40872080                . = .
+                0x40872080                __bss_start = .
+                0x40872080                __bss_start__ = .
+
+.bss            0x40872080        0x0
+ *(.dynbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x40872080        0x0 reboot.o
+ .bss           0x40872080        0x0 disp_direct.o
+ .bss           0x40872080        0x0 font_direct.o
+ .bss           0x40872080        0x0 strlen.o
+ .bss           0x40872080        0x0 strcmp.o
+ .bss           0x40872080        0x0 gcc-libgcc.a(_udivsi3.o)
+ .bss           0x40872080        0x0 gcc-libgcc.a(_dvmd_tls.o)
+ .bss           0x40872080        0x0 footer.o
+ *(COMMON)
+                0x40872080                . = ALIGN ((. != 0x0)?0x4:0x1)
+                0x40872080                _bss_end__ = .
+                0x40872080                __bss_end__ = .
+                0x40872080                . = ALIGN (0x4)
+                0x40872080                . = ALIGN (0x4)
+                0x40872080                __end__ = .
+                0x40872080                _end = .
+                0x40872080                PROVIDE (end, .)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x70
+ *(.comment)
+ .comment       0x00000000       0x70 reboot.o
+                                 0x71 (size before relaxing)
+ .comment       0x00000000       0x71 disp_direct.o
+ .comment       0x00000000       0x71 font_direct.o
+ .comment       0x00000000       0x71 footer.o
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame    0x00000000       0x20
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x20 gcc-libgcc.a(_udivsi3.o)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_macro
+ *(.debug_macro)
+
+.stack          0x00080000        0x0
+                0x00080000                _stack = .
+ *(.stack)
+
+.ARM.attributes
+                0x00000000       0x29
+ *(.ARM.attributes)
+ .ARM.attributes
+                0x00000000       0x27 reboot.o
+ .ARM.attributes
+                0x00000027       0x27 disp_direct.o
+ .ARM.attributes
+                0x0000004e       0x27 font_direct.o
+ .ARM.attributes
+                0x00000075       0x14 strlen.o
+ .ARM.attributes
+                0x00000089       0x30 strcmp.o
+ .ARM.attributes
+                0x000000b9       0x18 gcc-libgcc.a(_udivsi3.o)
+ .ARM.attributes
+                0x000000d1       0x18 gcc-libgcc.a(_dvmd_tls.o)
+ .ARM.attributes
+                0x000000e9       0x27 footer.o
+ *(.gnu.attributes)
+
+.note.gnu.arm.ident
+ *(.note.gnu.arm.ident)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(autoexec elf32-littlearm)
+
+Cross Reference Table
+
+Symbol                                            File
+__aeabi_idiv0                                     gcc-libgcc.a(_dvmd_tls.o)
+                                                  gcc-libgcc.a(_udivsi3.o)
+__aeabi_ldiv0                                     gcc-libgcc.a(_dvmd_tls.o)
+__aeabi_uidiv                                     gcc-libgcc.a(_udivsi3.o)
+                                                  font_direct.o
+__aeabi_uidivmod                                  gcc-libgcc.a(_udivsi3.o)
+__udivsi3                                         gcc-libgcc.a(_udivsi3.o)
+_start                                            reboot.o
+autoexec_bin_checksum_end                         footer.o
+                                                  reboot.o
+autoexec_bin_footer                               footer.o
+                                                  reboot.o
+blob_end                                          reboot.o
+blob_start                                        reboot.o
+cstart                                            reboot.o
+disp_init                                         disp_direct.o
+                                                  reboot.o
+disp_set_pixel                                    disp_direct.o
+                                                  font_direct.o
+font_draw                                         font_direct.o
+                                                  disp_direct.o
+print_line                                        disp_direct.o
+                                                  reboot.o
+strcmp                                            strcmp.o
+                                                  disp_direct.o
+strcoll                                           strcmp.o
+strlen                                            strlen.o
+                                                  font_direct.o
