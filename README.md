@@ -1,4 +1,4 @@
-<link href="https://raw.githubusercontent.com/jasonm23/markdown-css-themes/gh-pages/swiss.css" rel="stylesheet"></link>
+<link href="https://cdn.jsdelivr.net/gh/jasonm23/markdown-css-themes@gh-pages/swiss.css" rel="stylesheet"></link>
 <div align="center">
 
 # Magic Lantern
