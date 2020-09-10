@@ -18,7 +18,17 @@ Unofficially Nightly Builds for Magic-lantern
 [Nightly.2020May16.50D109.zip](https://sparkling-silence-6cb0.edge-blog.workers.dev/https://github.com/wanghurui/magic-lantern/releases/download/Nightly.2020May16/magiclantern-Nightly.2020May16.50D109.zip)
 
 ## 550D 1.0.9 ##
-[Nightly.2020May16.550D109.zip](https://sparkling-silence-6cb0.edge-blog.workers.devhttps://github.com/wanghurui/magic-lantern/releases/download/Nightly.2020May16/magiclantern-Nightly.2020May16.550D109.zip)
+[Nightly.2020May16.550D109.zip](https://sparkling-silence-6cb0.edge-blog.workers.dev/https://github.com/wanghurui/magic-lantern/releases/download/Nightly.2020May16/magiclantern-Nightly.2020May16.550D109.zip)
 
 ## 5D2 2.1.2 ##
-[Nightly.2020May16.5D2212.zip](https://sparkling-silence-6cb0.edge-blog.workers.devhttps://github.com/wanghurui/magic-lantern/releases/download/Nightly.2020May16/magiclantern-Nightly.2020May16.5D2212.zip)
+[Nightly.2020May16.5D2212.zip](https://sparkling-silence-6cb0.edge-blog.workers.dev/https://github.com/wanghurui/magic-lantern/releases/download/Nightly.2020May16/magiclantern-Nightly.2020May16.5D2212.zip)
+
+## 5D3 1.2.3 ##
+[Nightly.2020May16.5D3123.zip](https://sparkling-silence-6cb0.edge-blog.workers.dev/https://github.com/wanghurui/magic-lantern/releases/download/Nightly.2020May16/magiclantern-Nightly.2020May16.5D3123.zip)
+
+## 600D 1.0.2 ##
+[Nightly.2020May16.600D102.zip](https://sparkling-silence-6cb0.edge-blog.workers.dev/https://github.com/wanghurui/magic-lantern/releases/download/Nightly.2020May16/magiclantern-Nightly.2020May16.600D102.zip)
+
+## 60D 1.1.1 ##
+[Nightly.2020May16.60D111.zip](https://sparkling-silence-6cb0.edge-blog.workers.dev/https://github.com/wanghurui/magic-lantern/releases/download/Nightly.2020May16/magiclantern-Nightly.2020May16.60D111.zip)
+
