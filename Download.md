@@ -32,3 +32,17 @@ Unofficially Nightly Builds for Magic-lantern
 ## 60D 1.1.1 ##
 [Nightly.2020May16.60D111.zip](https://sparkling-silence-6cb0.edge-blog.workers.dev/https://github.com/wanghurui/magic-lantern/releases/download/Nightly.2020May16/magiclantern-Nightly.2020May16.60D111.zip)
 
+## 650D 1.0.4 ##
+[Nightly.2020May16.650D104.zip](https://sparkling-silence-6cb0.edge-blog.workers.dev/https://github.com/wanghurui/magic-lantern/releases/download/Nightly.2020May16/magiclantern-Nightly.2020May16.650D104.zip)
+
+## 6D 1.1.6 ##
+[Nightly.2020May16.6D116.zip](https://sparkling-silence-6cb0.edge-blog.workers.dev/https://github.com/wanghurui/magic-lantern/releases/download/Nightly.2020May16/magiclantern-Nightly.2020May16.6D116.zip)
+
+## 700D 1.1.5 ##
+[Nightly.2020May16.700D115.zip](https://sparkling-silence-6cb0.edge-blog.workers.dev/https://github.com/wanghurui/magic-lantern/releases/download/Nightly.2020May16/magiclantern-Nightly.2020May16.700D115.zip)
+
+## 7D 2.0.3 ##
+[Nightly.2020May16.7D203.zip](https://sparkling-silence-6cb0.edge-blog.workers.dev/https://github.com/wanghurui/magic-lantern/releases/download/Nightly.2020May16/magiclantern-Nightly.2020May16.7D203.zip)
+
+## EOS M 2.0.2 ##
+[Nightly.2020May16.EOSM202.zip](https://sparkling-silence-6cb0.edge-blog.workers.dev/https://github.com/wanghurui/magic-lantern/releases/download/Nightly.2020May16/magiclantern-Nightly.2020May16.EOSM202.zip)
