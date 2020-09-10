@@ -12,6 +12,8 @@ Unofficially Nightly Builds for Magic-lantern
 [Nightly.2020May16.1100D105.zip](https://sparkling-silence-6cb0.edge-blog.workers.dev/https://github.com/wanghurui/magic-lantern/releases/download/Nightly.2020May16/magiclantern-Nightly.2020May16.1100D105.zip)
 
 ## 500D 1.1.1 ##
+### Fixed && Tested ###
+500D:experimental workaround for ERR70, issue #1468 (only enabled when recording H.264 with sound)  
 [Nightly.2020May16.500D111.zip](https://sparkling-silence-6cb0.edge-blog.workers.dev/https://github.com/wanghurui/magic-lantern/releases/download/Nightly.2020May16/magiclantern-Nightly.2020May16.500D111.zip)
 
 ## 50D 1.0.9 ##
